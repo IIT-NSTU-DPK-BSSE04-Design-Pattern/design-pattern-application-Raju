@@ -4,11 +4,12 @@ import javax.xml.parsers.*;
 import java.io.*;
 import java.io.*;
 
-public class JSONProcessor implements FileProcessor {
+public class JSON_Processor implements File_Processor {
     @Override
-    public void process(String filePath) throws Exception {
+    public void process(String filePath) throws Exception 
+    {
         ObjectMapper objectMapper = new ObjectMapper();
         Map<String, Object> jsonMap = objectMapper.readValue(new File(filePath), Map.class);
-        System.out.println(jsonMap); // Displaying parsed JSON object
+        System.out.println(jsonMap);
     }
 }
