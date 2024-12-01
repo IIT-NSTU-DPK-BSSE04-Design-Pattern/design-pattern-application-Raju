@@ -16,7 +16,7 @@ public class DataProcessingPipeline {
         String filePath = args[1];
         
         try {
-            FileProcessor processor = FileProcessorFactory.getProcessor(fileType);
+            File_Processor processor = File_Processor_Factory.getProcessor(fileType);
             processor.process(filePath);
         } 
         catch (Exception e) 
