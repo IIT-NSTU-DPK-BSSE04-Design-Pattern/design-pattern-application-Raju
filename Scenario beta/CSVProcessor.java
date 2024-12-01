@@ -1,9 +1,10 @@
 import java.io.*;
 import java.util.*;
 
-public class CSVProcessor implements FileProcessor {
+public class CSV_Processor implements File_Processor {
     @Override
-    public void process(String filePath) throws Exception {
+    public void process(String filePath) throws Exception 
+    {
         List<String> lines = Files.readAllLines(Paths.get(filePath));
         for (String line : lines) 
         {
